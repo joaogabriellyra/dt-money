@@ -4,7 +4,7 @@ finance app
 
 # steps 
 - [x] setup;
-- [ ] header component;
+- [x] header component;
 - [ ] summary component;
 - [ ] transactions table;
 - [ ] search form component;
