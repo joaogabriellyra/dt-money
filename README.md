@@ -6,8 +6,8 @@ finance app
 - [x] setup;
 - [x] header component;
 - [x] summary component;
-- [ ] transactions table;
-- [ ] search form component;
+- [x] transactions table;
+- [x] search form component;
 - [ ] accessible modal;
 - [ ] modal new transaction;
 - [ ] input/output buttons;
