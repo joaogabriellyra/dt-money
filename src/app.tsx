@@ -3,6 +3,7 @@ import { defaultTheme } from "./styles/themes/default"
 import { GlobalStyle } from "./styles/global"
 import { Header } from "./components/header"
 import { Summary } from "./components/summary"
+import { Transactions } from "./components/transactions-table"
 
 export function App() {
   return (
@@ -10,6 +11,7 @@ export function App() {
       <GlobalStyle />
       <Header />
       <Summary />
+      <Transactions />
     </ThemeProvider>
   )
 }
