@@ -8,7 +8,7 @@ finance app
 - [x] summary component;
 - [x] transactions table;
 - [x] search form component;
-- [ ] accessible modal;
-- [ ] modal new transaction;
-- [ ] input/output buttons;
-- [ ] accessible radio button;
+- [x] accessible modal;
+- [x] modal new transaction;
+- [x] input/output buttons;
+- [x] accessible radio button;
