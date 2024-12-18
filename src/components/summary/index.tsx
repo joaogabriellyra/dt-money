@@ -1,7 +1,11 @@
 import { GreenSummaryContentContainer, SummaryContainer, SummaryContentContainer, SummaryContentValue, SummaryTitleAndIconContainer } from "./styles"
 import { ArrowCircleDown, ArrowCircleUp, CurrencyDollar } from '@phosphor-icons/react'
+import { priceFormatter } from "../../utils/formatter"
+import { useSummary } from "../../hooks/useSummary"
 
 export function Summary() {
+  const summary = useSummary()
+
   return (
     <SummaryContainer>
       <SummaryContentContainer>
@@ -10,7 +14,7 @@ export function Summary() {
           <ArrowCircleUp size={32} color="#00B37E" />
         </SummaryTitleAndIconContainer>
         <SummaryContentValue>
-          R$ 17.400,00
+          {priceFormatter.format(summary.income)}
         </SummaryContentValue>
       </SummaryContentContainer>
       <SummaryContentContainer>
@@ -19,7 +23,7 @@ export function Summary() {
           <ArrowCircleDown size={32} color="#F75A68" />
         </SummaryTitleAndIconContainer>
         <SummaryContentValue>
-          R$ 1.259,00
+          {priceFormatter.format(summary.outcome)}
         </SummaryContentValue>
       </SummaryContentContainer>
       <GreenSummaryContentContainer>
@@ -28,7 +32,7 @@ export function Summary() {
           <CurrencyDollar size={32} color="#FFF" />
         </SummaryTitleAndIconContainer>
         <SummaryContentValue>
-          R$ 16.141,00
+          {priceFormatter.format(summary.total)}
         </SummaryContentValue>
       </GreenSummaryContentContainer>
     </SummaryContainer>
